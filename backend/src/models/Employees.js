@@ -74,4 +74,4 @@ const employeesSchema = new Schema(
   }
 );
 
-export default model("Clients", employeesSchema);
+export default model("Employees", employeesSchema);

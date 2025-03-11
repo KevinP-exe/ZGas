@@ -13,7 +13,7 @@ app.use(express.json());
 
 app.use("/api/products", productsRoutes);
 app.use("/api/clients", clientsRoutes);
-app.use("/api/clients", employeesRoutes);
+app.use("/api/employees", employeesRoutes);
 
 // exporto esta constante para usar express en todos lados
 export default app;
