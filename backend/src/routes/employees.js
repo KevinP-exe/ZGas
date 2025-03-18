@@ -1,16 +1,16 @@
 import express from "express";
-import productsController from "../controllers/employeesController.js";
+import employeesController from "../controllers/employeesController.js";
 
 const router = express.Router();
 
 router
   .route("/")
-  .get(productsController.getEmployees)
-  .post(productsController.insertEmployee);
+  .get(employeesController.getEmployees)
+  .post(employeesController.insertEmployee);
 
 router
   .route("/:id")
-  .put(productsController.updateEmployee)
-  .delete(productsController.deleteEmployee);
+  .put(employeesController.updateEmployee)
+  .delete(employeesController.deleteEmployee);
 
 export default router;
