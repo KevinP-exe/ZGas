@@ -2,7 +2,7 @@ import bcryptjs from "bcryptjs";
 import jsonwebtoken from "jsonwebtoken"
 
 import {config} from "../config.js"
-import employeesMdl from "../models/employeesMdl.js";
+import employeesMdl from "../models/Employees.js";
 
 const registerEmployeesController = {}
 

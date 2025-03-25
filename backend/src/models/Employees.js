@@ -8,9 +8,8 @@ const employeesSchema = new Schema(
       minlength: [3, "El nombre debe tener al menos 3 caracteres"],
       maxlength: [50, "El nombre no puede exceder los 50 caracteres"]
     },
-    lastname: {
+    lastName: {
       type: String,
-      required: [true, "El apellido es obligatorio"],
       minlength: [3, "El apellido debe tener al menos 3 caracteres"],
       maxlength: [50, "El apellido no puede exceder los 50 caracteres"]
     },
@@ -26,8 +25,8 @@ const employeesSchema = new Schema(
     },
     email: {
       type: String,
-      required: [true, "El correo electrónico es obligatorio"],
-      match: [/^[\w-]+(\.[\w-]+)*@([\w-]+\.)+[a-zA-Z]{2,7}$/, "Por favor ingresa un correo electrónico válido"]
+//      required: [true, "El correo electrónico es obligatorio"],
+  //    match: [/^[\w-]+(\.[\w-]+)*@([\w-]+\.)+[a-zA-Z]{2,7}$/, "Por favor ingresa un correo electrónico válido"]
     },
     address: {
         type: String,
